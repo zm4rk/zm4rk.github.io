@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Bebas Neue', sans-serif;
+	font-weight: normal;
+	font-style: bold;
+	color: #edf0f1;
+}
+
+body {
+	position: relative;
+	padding-top: 0.7vw;
+	padding-bottom: 0.7vw;
+	background-image: url("images/BG.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.corner {
+	position: absolute;
+	width: 10%;
+	z-index: 1;
+}
+
+#topleft {
+	top: 1vw;
+	left: 1vw;
+}
+
+#topright {
+	top: 1vw;
+	right: 1vw;
+	transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+}
+
+#bottomleft {
+	left: 1vw;
+	bottom: 1vw;
+	transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+}
+
+#bottomright {
+	right: 1vw;
+	bottom: 1vw;
+	transform: scaleY(-1) scaleX(-1);
+	-webkit-transform: scaleY(-1) scaleX(-1);
+}
+
+header, footer {
+	margin: 2.5% 5% 2.5% 5%;
+	background: rgba(81, 81, 81, 0.25);
+	display: flex;
+	justify-content: flex-end;
+	align-items:center;
+	border-radius: 1vw;
+}
+
+.footersocials {
+	list-style: none;
+}
+
+#markfooter {
+	font-size: 2vw;
+	z-index: +2;
+	margin-right: auto;
+	padding: 1.25%;
+	margin-left: 0.75vw;
+	cursor: default;
+	letter-spacing: 0.12vw;
+}
+
+.footersocials li {
+	z-index: +2;
+}
+
+.footersocials li a {
+	position: absolute;
+	font-size: 2vw;
+	z-index: +2;
+	transition: filter 0.4s;
+}
+
+.fa-twitch {
+	font-size: 1.8vw;
+	right: 7vw;
+	bottom: 4.6vw;
+}
+
+.fa-instagram {
+	font-size: 2vw;
+	right: 11vw;
+	bottom: 4.7vw;
+}
+
+.fa-twitter {
+	font-size: 2.2vw;
+	right: 15vw;
+	bottom: 4.7vw;
+}
+
+.footersocials li a:hover {
+	filter: brightness(70%);
+}
+
+.logo {
+	z-index: +2;
+	margin: 0.65% 0% 0.65% 2%;
+	margin-right: auto;
+	width: 3.75%;
+	height: auto;
+	cursor: pointer;
+	transition: filter 0.4s;
+	opacity: 100%;
+}
+
+.logo:hover {
+	filter: brightness(70%);
+}
+
+.navbar_links {
+	opacity: 100%;
+    list-style: none;
+}
+
+.navbar_links li {
+    display: block;
+}
+
+.navbar_links li a {
+	letter-spacing: 0.12vw;
+	z-index: +2;
+	position: absolute;
+    font-size: 2vw;
+    transition: text-shadow .4s ease, transform .3s ease;
+	display: block;
+	text-align: center;
+}
+
+#home {
+	right: 24vw;
+	top: 4.2vw;
+}
+
+#order {
+	right: 16.5vw;
+	top: 4.2vw;
+}
+
+#mywork {
+	right: 7vw;
+	top: 4.2vw;
+}
+
+.navbar_links li a:hover {
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+	transform: scale(1.15, 1.15);
+}
+
+#homeintro {
+    align-items: center;
+	display: flex;
+	flex-direction: row;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#hiimmark {
+	width: 66%;
+	max-width: 66%;
+}
+
+#hiimmark > p {
+	color: #7f7f7f;
+	font-size: 3.5vw;
+	margin-left: 4vw;
+	margin-right: 5vw;
+	cursor: default;
+}
+
+#hiimmark > h1 {
+	color: #fdad3d;
+	font-family: 'passion one', sans-serif;
+	margin-left: 2vw;
+	font-size: 5vw;
+	cursor: default;
+}
+
+#marklogo {
+	width: 33%;
+	max-width: 33%;
+}
+
+#biglogo {
+	width: 100%;
+}
+
+h2 {
+	color: #7f7f7f;
+	padding: 0px;
+	margin-top: 10vw;
+	vertical-align: center;
+	text-align: center;
+	font-size: 5vw;
+	cursor: default;
+}
+
+#buttonlist {
+	margin-top: 3vw;
+	display: flex;
+	justify-content: center;
+}
+
+.buttons {
+	margin-left: 1.5vw;
+	margin-right: 1.5vw;
+	margin-bottom: 15vw;
+	font-size: 3.5vw;
+	display: inline-block;
+}
+
+.accountbutton {
+	align-items: center;
+	height: 5vw;
+	width: 12.5vw;
+	background-color: #fdad3d;
+	border: none;
+	border-radius: 1.7vw;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.accountbutton:hover {
+	background-color: #F7BE6F;
+}
+
+.section3, .section3-2 {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.myskills {
+	cursor: default;
+	font-size: 3.3vw;
+	font-weight: normal;
+	align-items: center;
+	height: 5.5vw;
+	width: 16.25vw;
+	background-color: #fdad3d;
+	border-radius: 2vw;
+	display: flex;
+	justify-content: center;
+}
+
+.skills {
+	color: #7f7f7f;
+	background-image: url("images/myskillslayout.svg");
+	height: 40vw;
+	width: 100%;
+	background-size: 100% 40vw;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 5vw;
+}
+
+.skills p {
+	cursor: default;
+	line-height: 4vw;
+	font-size: 4vw;
+	font-weight: normal;
+	align-items: center;
+	text-align: center;
+	color: rgba(127,127,127,1);
+}
+
+.graphicdesigner {
+	display: flex;
+	justify-content: center;
+	margin-top: 9.5vw;
+	margin-bottom: 11.5vw;
+}
+
+#previousdesigns {
+	cursor: default;
+	color: #7f7f7f;
+	vertical-align: center;
+	text-align: center;
+	font-size: 5vw;
+}
+
+.grid-container {
+	display: grid;
+	grid-gap: 5%;
+	grid-template-columns: 47.5% 47.5%;
+	grid-auto-rows: 21.1vw;
+	margin: 3vw 10vw 30vw 10vw;
+}
+.grid-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.grid-item::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	border-radius: 3vw;
+	background-image: url("images/skull.png");
+	background-size: cover;
+	cursor: pointer;
+	filter: brightness(65%);
+	transition: filter .3s;
+}
+
+.grid-item:hover::before {
+	filter: brightness(100%);	
+}
+
+.item1::before {
+	background-image: url("images/s3mo.png");
+}
+
+.item2::before {
+	background-image: url("images/saud.png");
+}
+
+.item3::before {
+	background-image: url("images/outlaw.png");
+}
+
+.item4::before {
+	background-image: url("images/6r7.png");
+}
+
+.grid-item::after {
+	text-align: center;
+	align-items: center;
+	width: 25%;
+	border: 0.3vw solid;
+	border-color: rgba(253, 173, 61, 0);
+	border-radius: 3vw;
+	padding: 7.2vw 6.3vw;
+	content: "";
+	font-size: 5vw;
+	position: absolute;
+	color: rgba(253, 173, 61, 1);
+	text-shadow: 0px 0px 15px rgba(253, 173, 61, 0.3);
+	transition: text-shadow .25s, color .25s, padding .3s, border-color .3s, border-radius .3s, box-shadow .3s ease;
+}
+
+.grid-item:hover::after {
+	border-radius: 3.5vw;
+	border-color: rgba(253, 173, 61, 1);
+	padding: 7.7vw 6.8vw;
+	color: rgba(253, 173, 61, 0);
+	text-shadow: 0px 0px 15px rgba(253, 173, 61, 0);
+	box-shadow: 0px 0px 15px rgba(253, 173, 61, 1);
+}
+
+.item1::after {
+	content: "S3MO";
+}
+
+.item2::after {
+	content: "SAUD";
+}
+
+.item3::after {
+	content: "OUTLAW";
+}
+
+.item4::after {
+	content: "6R7";
+}
+
+.comingsoon {
+	margin-top: 5vw;
+	margin-bottom: 30vw;
+	cursor: default;
+	color: rgba(253, 173, 61, 1);
+	text-align: center;
+	font-size: 15vw;
+	line-height: 15vw;
+}
+
+.choices {
+	display: flex;
+    flex-direction: row;
+	justify-content: center;
+    align-items: center;
+	height: 100vh;
+	max-height: 50vw;
+	width: 100%;
+}
+
+.choice {
+	width: 50%;
+	height: 100%;
+    text-align: center;
+}
+
+a > div {
+	height: inherit;
+	width: 100%;
+	background-size: cover;
+	transition: filter 0.3s;
+}
+
+#imgOne {
+	background-image: url("images/free to use pic.jpeg");
+}
+
+#imgTwo {
+	background-image: url("images/creative commons pic.jpeg");
+}
+
+.orderh1 {
+	padding: 0px;
+	margin: 0px;
+	line-height: 250%;
+	vertical-align: center;
+	text-align: center;
+	font-size: 5vw;
+}
+
+.orderp {
+	padding: 0px;
+	margin: 0px;
+	vertical-align: center;
+	text-align: center;
+	font-size: 2vw;
+	margin: 0% 10% 5% 10%;
+}
+
+.price {
+	padding: 0px;
+	margin: 0px;
+	vertical-align: center;
+	text-align: center;
+	font-size: 4vw;
+	margin: 0% 10% 5% 10%;
+}
+
+a > div:hover {
+	filter: brightness(65%);
+}
+
+a, a:hover, a:focus, a:active {
+      text-decoration: none;
+      color: inherit;
+ }
