@@ -332,7 +332,7 @@ h2 {
 }
 
 .item3::before {
-	background-image: url("images/Outlaw.png");
+	background-image: url("images/outlaw.png");
 }
 
 .item4::before {
